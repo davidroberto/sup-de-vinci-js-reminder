@@ -29,6 +29,11 @@
     // j'insère dans la balise le titre créé
     articleElement.appendChild(titleElement);
 
+    const imgElement = document.createElement("img");
+    imgElement.setAttribute("src", meal.strMealThumb);
+
+    articleElement.appendChild(imgElement);
+
     // j'insère dans la div root, l'article
     root.appendChild(articleElement);
   });
